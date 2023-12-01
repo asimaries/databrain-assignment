@@ -56,7 +56,7 @@ const NavBar = () => {
       clearTimeout(timer);
     };
   }, [category]);
-  // if (error) return <h3>{error}</h3>;
+  if (error) console.error(error);
 
   return (
     <>
@@ -65,7 +65,7 @@ const NavBar = () => {
           <h3 className="text-lg font-semibold">Sort By:</h3>
           <ul className="space-y-[2px]">
             <li
-              className="text-sm cursor-pointer hover:bg-neutral-200 border"
+              className="text-sm cursor-pointer hover:bg-neutral-200 hover:border rounded"
               onClick={() => {
                 dispatch(sortProducts("sortByRelevance"));
               }}
@@ -73,7 +73,7 @@ const NavBar = () => {
               Relevance
             </li>
             <li
-              className="text-sm cursor-pointer "
+              className="text-sm cursor-pointer  hover:bg-neutral-200 hover:border rounded"
               onClick={() => {
                 dispatch(sortProducts("sortByPopularity"));
               }}
@@ -81,7 +81,7 @@ const NavBar = () => {
               Popularity
             </li>
             <li
-              className="text-sm cursor-pointer "
+              className="text-sm cursor-pointer  hover:bg-neutral-200 hover:border rounded"
               onClick={() => {
                 dispatch(sortProducts("sortByPriceLowtoHigh"));
               }}
@@ -89,7 +89,7 @@ const NavBar = () => {
               Price -- Low to High
             </li>
             <li
-              className="text-sm cursor-pointer "
+              className="text-sm cursor-pointer  hover:bg-neutral-200 hover:border rounded"
               onClick={() => {
                 dispatch(sortProducts("sortByPriceHightoLow"));
               }}
@@ -97,7 +97,7 @@ const NavBar = () => {
               Price -- High to Low
             </li>
             <li
-              className="text-sm cursor-pointer "
+              className="text-sm cursor-pointer  hover:bg-neutral-200 hover:border rounded"
               onClick={() => {
                 dispatch(sortProducts("sortByDiscountPercentage"));
               }}
@@ -113,7 +113,7 @@ const NavBar = () => {
             {categories.map((category: string) => {
               return (
                 <li
-                  className="text-sm cursor-pointer "
+                  className="text-sm cursor-pointer  hover:bg-neutral-200 hover:border rounded"
                   key={category}
                   onClick={() => setCategory(category)}
                 >
