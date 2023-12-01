@@ -5,7 +5,7 @@ import ProductList from "./ProductList";
 const OrderSummary = () => {
   const cart = useSelector((state: RootState) => state.cart);
   const orderDetail = useSelector((state: RootState) => state.orderDetail);
-  const orderSummary = { cart, orderDetail };
+  // const orderSummary = { cart, orderDetail };
   // console.log(orderSummary);
   return (
     <div className="container mx-auto p-8">
