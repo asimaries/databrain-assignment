@@ -24,7 +24,7 @@ const ProductList = ({ products }: { products: Product[] }) => {
   useEffect(() => {
     getCategories();
   }, []);
-  if (error) return <h3>{error}</h3>;
+  // if (error) return <h3>{error}</h3>;
 
   return (
     <>

@@ -6,7 +6,7 @@ const OrderSummary = () => {
   const cart = useSelector((state: RootState) => state.cart);
   const orderDetail = useSelector((state: RootState) => state.orderDetail);
   const orderSummary = { cart, orderDetail };
-  console.log(orderSummary);
+  // console.log(orderSummary);
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold mb-8">Order Details</h1>

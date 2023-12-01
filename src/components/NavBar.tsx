@@ -56,7 +56,7 @@ const NavBar = () => {
       clearTimeout(timer);
     };
   }, [category]);
-  if (error) return <h3>{error}</h3>;
+  // if (error) return <h3>{error}</h3>;
 
   return (
     <>
@@ -65,7 +65,7 @@ const NavBar = () => {
           <h3 className="text-lg font-semibold">Sort By:</h3>
           <ul className="space-y-[2px]">
             <li
-              className="text-sm cursor-pointer "
+              className="text-sm cursor-pointer hover:bg-neutral-200 border"
               onClick={() => {
                 dispatch(sortProducts("sortByRelevance"));
               }}

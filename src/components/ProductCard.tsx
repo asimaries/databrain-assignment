@@ -18,7 +18,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   } = product;
   const dispatch = useDispatch();
   const { pathname } = useLocation();
-  console.log(pathname);
+  // console.log(pathname);
   const addProductToCart = (product: Product) => {
     dispatch(addProduct(product));
   };
