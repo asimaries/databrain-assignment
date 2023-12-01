@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
 import { addProduct, removeProduct } from "../store/cartSlice";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const ProductCard = ({ product }: { product: Product }) => {
   const {

@@ -22,6 +22,7 @@ const productSlice = createSlice({
   initialState,
   reducers: {
     addProducts: (state, action: { payload: Product[] }) => {
+      state;
       return [...action.payload];
     },
     sortProducts: (state, action: { payload: string }) => {
