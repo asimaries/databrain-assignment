@@ -11,11 +11,8 @@ const Header = () => {
   return (
     <>
       <div className="p-2 flex justify-between items-center sticky top-0 h-20 shadow-sm  shadow-neutral-400 bg-white">
-        <button className="w-52" onClick={() => navigate("/")}>
-          <img
-            src="https://assets-global.website-files.com/63eb69aa72bde7519518ed3d/64779cbefda774e61881ce25_Dark_DB_logo%201.png"
-            alt=""
-          />
+        <button className="" onClick={() => navigate("/")}>
+          <h1 className="text-5xl font-bold">Fake Store</h1>
         </button>
         <SearchBar />
         <div className="flex items-center">
